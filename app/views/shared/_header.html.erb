@@ -1,0 +1,30 @@
+<div class="header"> 
+  <div class="logo">
+    <%= link_to image_tag("/images/big-logo.png", class:"header-icon"), "/" %>
+  </div>
+  <div class="header-btn">
+    <% if current_user.admin%>
+      <%= link_to '記事を投稿する', new_article_path, class:"post-article-btn"%>
+    <% end %>
+    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class:"logout-btn"%>
+  </div>
+  <div class="menu-bar">
+    <ul class="menu-elements">
+      <li id="menu1">
+        メニュー1
+        <ul class="menu1-lists hidden" id="menu1-pull-down">
+          <li>リスト1</li>
+          <li>リスト2</li>
+          <li>リスト3</li>
+          <li>リスト4</li>
+        </ul>
+      </li>
+      <li id="menu2">
+        メニュー2
+      </li>
+      <li id="menu3">
+        メニュー3
+      </li>
+    </ul>
+  </div>
+</div>

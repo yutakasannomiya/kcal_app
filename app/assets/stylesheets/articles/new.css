@@ -1,0 +1,51 @@
+.post-article-form{
+  margin-top: calc(80px + 40px);
+  width: 100%;
+  padding: 30px 100px;
+}
+
+.post-article-form form{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+form p {
+  width: 70%;
+}
+
+span{
+  color: red;
+  font-weight: bold;
+}
+
+.new-article-title{
+  height: 50px;
+  width: 70%;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.new-article-content{
+  height: 400px;
+  width: 70%;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.new-article-image{
+  margin-bottom: 30px;
+}
+
+.new-article-about_time{
+  height: 50px;
+  width: 70%;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.new-article-submit_btn{
+  height: 50px;
+  width: 30%;
+  margin-bottom: 30px;
+}
