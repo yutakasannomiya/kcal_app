@@ -1,0 +1,105 @@
+/* header設定 */
+
+.header{
+  height: 80px;
+  width: 100%;
+  background-color: #CCCCCC;
+  position: fixed;
+  top:0;
+}
+
+.logo{
+  height: 40px;
+  width: 18%;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+}
+
+.header-btn{
+  height: 40px;
+  width: 30%;
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  display: flex;
+  justify-content: end;
+}
+
+.post-article-btn{
+  height: 35px;
+  width: 48%;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 10px;
+  background: orange;
+  margin-right: 4%;
+}
+
+.logout-btn{
+  height: 35px;
+  width: 48%;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 10px;
+  color: white;
+  background: #040880;
+}
+
+.menu-bar{
+  height: 40px;
+  width: 100%;
+  background: #040880;
+  position: absolute;
+  top: 100%;
+}
+
+.menu-elements{
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+
+#menu1, #menu2, #menu3{
+  height: 100%;
+  width: calc(100% / 3);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #CCCCCC;
+  background: #040880;
+  position: relative;
+}
+
+.menu1-lists{
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  right: 0px;
+}
+
+.menu1-lists li{
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+  border: 1px solid #CCCCCC;
+  background-color: #040880;
+}
+
+.hidden{
+  display: none;
+}
+
+.header-icon{
+  font-size: xx-large;
+  height: 45px;
+  width: 80%;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 10px;
+  color: white;
+  background: #040880;
+}
