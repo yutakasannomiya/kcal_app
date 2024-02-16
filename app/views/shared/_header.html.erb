@@ -12,7 +12,7 @@
     <ul class="menu-elements">
       <li id="menu1">
          <% if user_signed_in? %>
-          <%= link_to 'kcalを計算する', new_article_path %>
+          <%= link_to 'kcalを計算する', new_calc_path(@user) %>
          <% end %>
         <ul class="menu1-lists hidden" id="menu1-pull-down">
           <li>リスト1</li>
@@ -22,7 +22,9 @@
         </ul>
       </li>
       <li id="menu2">
-        メニュー2
+        <% if user_signed_in? %>
+          <%= link_to '記録を見る', calc_path(@user.id) %> 
+        <% end %>
       </li>
       <li id="menu3">
         メニュー3
