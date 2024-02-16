@@ -1,0 +1,18 @@
+.footer{
+  height: 60px;
+  background-color: #CCCCCC;
+}
+
+.fotter-logo{
+  font-size: x-large;
+  display: block;
+  padding: 20px 0;
+  margin: auto;
+  height: 60px;
+  width: 48%;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 10px;
+  color: white;
+  background: #040880;
+}

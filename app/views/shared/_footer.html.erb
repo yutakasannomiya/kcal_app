@@ -1,3 +1,5 @@
 <div class="footer">
-  <%=link_to image_tag("/images/mini-logo.png", class:"fotter-logo"), "/" %>
+   <% if user_signed_in? %>
+      <%= link_to 'kcalアプリ', new_calc_path(@user), class:"fotter-logo"%>
+    <% end %>
 </div>

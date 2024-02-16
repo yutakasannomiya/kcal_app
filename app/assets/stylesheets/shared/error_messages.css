@@ -1,0 +1,16 @@
+.field_with_errors {
+  display: contents;
+}
+
+.error-alert {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+}
+
+.error-message {
+  font-size: 20px;
+  list-style: circle;
+  color: rgb(182, 48, 0);
+}

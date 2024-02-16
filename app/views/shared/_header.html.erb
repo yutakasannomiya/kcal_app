@@ -1,9 +1,9 @@
 <div class="header"> 
   <div class="logo">
-    <%= link_to image_tag("/images/big-logo.png", class:"header-icon"), "/" %>
+    <h1  class="header-icon">kcalアプリ</h1>
   </div>
   <div class="header-btn">
-    <% if current_user.admin%>
+     <% if user_signed_in? %>
       <%= link_to '記事を投稿する', new_article_path, class:"post-article-btn"%>
     <% end %>
     <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class:"logout-btn"%>
@@ -11,7 +11,9 @@
   <div class="menu-bar">
     <ul class="menu-elements">
       <li id="menu1">
-        メニュー1
+         <% if user_signed_in? %>
+          <%= link_to 'kcalを計算する', new_article_path %>
+         <% end %>
         <ul class="menu1-lists hidden" id="menu1-pull-down">
           <li>リスト1</li>
           <li>リスト2</li>
