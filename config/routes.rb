@@ -1,13 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users 
-  devise_scope :user do
-    resources :calcs, only: [:index, :new, :create, :show]
+  devise_for :users do
+    resources :calcs, only: :create
   end
-  root to: 'calcs#index'
-  
+  root to: 'articles#index'
   resources :articles
-  # get '/calcs/calc', to: 'calcs#calc'
   
-  # # asオプションはplefixを生成する
-  # get 'checks/:id', to: 'checks#check', as: 'check'
+  # asオプションはplefixを生成する
+  get 'checks/:id', to: 'checks#check', as: 'check'
 end

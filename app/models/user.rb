@@ -17,7 +17,6 @@ class User < ApplicationRecord
 
   has_many :checks, dependent: :destroy
   has_many :articles, through: :checks
-  has_many :calcs
 
   # belongs_to :sex, polymorphic: true
 end
