@@ -1,3 +1,5 @@
 <div class="footer">
-   <h1  class="fotter-logo">kcalアプリ</h1>
+   <% if user_signed_in? %>
+      <%= link_to 'kcalアプリ', new_calc_path(@user), class:"fotter-logo"%>
+    <% end %>
 </div>
